@@ -1,7 +1,7 @@
 Typo
 ====
 
-Typo - Typewriter effect for LÖVE
+Typo - Typewriter effect for LÖVE<br/>
 Created by Eamonn Rea
 
 LICENSE
