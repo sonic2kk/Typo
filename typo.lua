@@ -1,6 +1,6 @@
-typo = {}
+local typo = {}
 
-function typo_new(text, delay, width, align, x, y, font, colour)
+function typo.new(text, delay, width, align, x, y, font, colour)
   local t = {
     t = text,
     delay = delay,
@@ -29,7 +29,7 @@ function typo_new(text, delay, width, align, x, y, font, colour)
   table.insert(typo, t)
 end
 
-function typo_update(dt)
+function typo.update(dt)
   for i,v in ipairs(typo) do
     v.timer = v.timer + dt
 
@@ -43,10 +43,12 @@ function typo_update(dt)
   end
 end
 
-function typo_draw()
+function typo.draw()
   for i,v in ipairs(typo) do
     love.graphics.setColor(v.colour)
     love.graphics.setFont(v.font)
     love.graphics.printf(v.text, v.x, v.y, v.width, v.align)
   end
 end
+
+return typo 
