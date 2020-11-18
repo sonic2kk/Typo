@@ -1,10 +1,10 @@
 typo = {}
 
-function typo_new(text, delay, width, align, x, y, font, colour)
+function typo_new(text, delay, limit, align, x, y, font, colour)
   local t = {
     t = text,
     delay = delay,
-    width = width,
+    limit = limit,
     align = align,
     x = x,
     y = y,
@@ -47,6 +47,6 @@ function typo_draw()
   for i,v in ipairs(typo) do
     love.graphics.setColor(v.colour)
     love.graphics.setFont(v.font)
-    love.graphics.printf(v.text, v.x, v.y, v.width, v.align)
+    love.graphics.printf(v.text, v.x, v.y, v.limit, v.align)
   end
 end
