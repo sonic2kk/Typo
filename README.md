@@ -1,7 +1,10 @@
 Typo
 ====
 
-Typo - Typewriter effect for LÖVE<br/>
+Typo - Typewriter effect for LÖVE
+
+Compatible with LÖVE 11.4 (Mysterious Mysteries).
+
 Created by Eamonn Rea
 
 LICENSE
