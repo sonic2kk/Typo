@@ -3,7 +3,7 @@ Typo
 
 Typo - Typewriter effect for LÖVE
 
-Compatible with LÖVE 11.4 (Mysterious Mysteries).
+Compatible with LÖVE 11.5 (Mysterious Mysteries).
 
 Created by Eamonn Rea
 
